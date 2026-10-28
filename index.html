@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Shift — Privacy Policy &amp; Terms of Use</title>
+  <meta name="description" content="Privacy Policy and Terms of Use for the Mock Shift app." />
+  <style>
+    :root {
+      --accent: #F97316;
+      --accent-soft: #FFF1E7;
+      --bg: #F4F6F9;
+      --card: #FFFFFF;
+      --border: #E6EAF1;
+      --text: #1B2333;
+      --muted: #7A8398;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: linear-gradient(180deg, var(--accent-soft), var(--bg));
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+    .logo {
+      width: 64px; height: 64px;
+      margin: 0 auto 16px;
+      background: var(--accent);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+    }
+    .logo svg { width: 34px; height: 34px; }
+    header h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.3px; }
+    header p { color: var(--muted); margin-top: 6px; font-size: 15px; }
+
+    /* Tabs */
+    nav.tabs {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav.tabs .wrap { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    nav.tabs button {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      font-size: 14px; font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    nav.tabs button:hover { border-color: var(--accent); color: var(--accent); }
+    nav.tabs button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* Sections */
+    main { padding: 28px 0 12px; }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    .updated {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px; font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 10px rgba(27, 35, 51, 0.04);
+    }
+    .card h2 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .card h2::before {
+      content: "";
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .card p, .card li { color: var(--text); font-size: 15px; }
+    .card ul { padding-left: 20px; margin-top: 4px; }
+    .card li { margin-bottom: 4px; }
+    .intro { font-size: 16px; font-weight: 500; }
+    a { color: var(--accent); }
+
+    /* Contact */
+    .contact-card { text-align: center; padding: 36px 24px; }
+    .contact-card .email-btn {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 16px; font-weight: 700;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 999px;
+      box-shadow: 0 6px 18px rgba(249, 115, 22, 0.35);
+      transition: transform 0.15s ease;
+      word-break: break-all;
+    }
+    .contact-card .email-btn:hover { transform: translateY(-2px); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    @media (max-width: 520px) {
+      header h1 { font-size: 23px; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#fff"/>
+          <circle cx="12" cy="9" r="2.6" fill="#F97316"/>
+        </svg>
+      </div>
+      <h1>Mock Shift</h1>
+      <p>Privacy Policy &amp; Terms of Use</p>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <div class="wrap">
+      <button class="active" data-tab="privacy">Privacy Policy</button>
+      <button data-tab="terms">Terms of Use</button>
+      <button data-tab="contact">Contact Us</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ============ PRIVACY POLICY ============ -->
+    <section id="privacy" class="panel active">
+      <span class="updated">Effective date: October 17, 2026</span>
+
+      <div class="card">
+        <p class="intro">Mock Shift is built for developer testing, debugging, and verifying location-based applications.</p>
+      </div>
+
+      <div class="card">
+        <h2>Data collection</h2>
+        <p>Mock Shift collects no personal data. There are no accounts, no analytics, no advertising SDKs, and no tracking of any kind.</p>
+      </div>
+
+      <div class="card">
+        <h2>Where your data lives</h2>
+        <p>Everything you create — saved places, saved routes, favorites, history, settings, and downloaded routing data — is stored only on your device. Nothing is uploaded to any server, and nothing leaves the app except the mock GPS coordinates you explicitly choose to broadcast to other apps via Android's mock-location mechanism.</p>
+      </div>
+
+      <div class="card">
+        <h2>Network usage</h2>
+        <p>The app uses the internet only to display the map and to download optional offline routing data (OpenStreetMap-based tiles) when you request it. Map requests go to OpenStreetMap's public tile servers; routing data downloads go to brouter.de (or its mirror). No user-identifying information is sent with these requests.</p>
+      </div>
+
+      <div class="card">
+        <h2>Permissions</h2>
+        <ul>
+          <li><strong>Location access:</strong> required to provide mock locations to other apps.</li>
+          <li><strong>Notifications:</strong> required by Android to show the persistent Fake GPS status while spoofing is active.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Third parties</h2>
+        <p>Map data © OpenStreetMap contributors, available under the Open Database License (ODbL). Routing engine: BRouter (MIT license).</p>
+      </div>
+
+      <div class="card">
+        <h2>Your data rights</h2>
+        <p>This app has no backend and stores nothing about you, so there is no user data to access, correct, or delete beyond what you can already manage in the app itself (Clear history / Clear saved data in Settings).</p>
+      </div>
+    </section>
+
+    <!-- ============ TERMS OF USE ============ -->
+    <section id="terms" class="panel">
+      <span class="updated">Effective date: October 17, 2026</span>
+
+      <div class="card">
+        <p class="intro">By downloading or using Mock Shift, you agree to these Terms of Use. If you do not agree, please do not use the app.</p>
+      </div>
+
+      <div class="card">
+        <h2>Purpose of the app</h2>
+        <p>Mock Shift is a developer utility for testing, debugging, and verifying location-based applications. It lets you simulate a GPS location on your own device using Android's official mock-location mechanism.</p>
+      </div>
+
+      <div class="card">
+        <h2>Acceptable use</h2>
+        <p>You agree to use this app only on devices you own or are authorized to configure, and only for legitimate purposes such as app development and testing. You must not use the app to:</p>
+        <ul>
+          <li>deceive, defraud, or mislead any person, service, or system;</li>
+          <li>manipulate location-based games, rewards, or services in violation of their terms;</li>
+          <li>evade law enforcement, surveillance, or safety systems;</li>
+          <li>violate any applicable law, regulation, or third-party rights.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Your responsibility</h2>
+        <p>You are solely responsible for how you use the simulated locations produced by this app. Mock locations are visible to other apps on the device, and enabling the mock-location developer option is your own choice. Misuse of the app is entirely at your own risk.</p>
+      </div>
+
+      <div class="card">
+        <h2>No warranty</h2>
+        <p>The app is provided "as is" and "as available", without warranties of any kind, express or implied, including accuracy, availability, fitness for a particular purpose, and non-infringement. We do not guarantee that simulated locations will be accepted by any other app or service.</p>
+      </div>
+
+      <div class="card">
+        <h2>Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, the developer shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of — or inability to use — the app, including any consequences of location data you broadcast to other apps.</p>
+      </div>
+
+      <div class="card">
+        <h2>Intellectual property &amp; third-party content</h2>
+        <p>Map data © OpenStreetMap contributors, available under the Open Database License (ODbL). Routing engine: BRouter (MIT license). All other app content is the property of the developer.</p>
+      </div>
+
+      <div class="card">
+        <h2>Changes to these terms</h2>
+        <p>We may update these Terms of Use from time to time. The effective date above reflects the latest version. Continued use of the app after changes means you accept the updated terms.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="panel">
+      <div class="card contact-card">
+        <h2 style="justify-content:center;">Contact Us</h2>
+        <p>Questions, feedback, or concerns about Mock Shift?<br />We'd love to hear from you — send us an email and we'll get back to you.</p>
+        <a class="email-btn" href="mailto:mariamazam1788@gmail.com">mariamazam1788@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Mock Shift · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('nav.tabs button');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) { b.classList.remove('active'); });
+          document.querySelectorAll('.panel').forEach(function (p) { p.classList.remove('active'); });
+          btn.classList.add('active');
+          document.getElementById(btn.getAttribute('data-tab')).classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
